@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-09-05T08:49:43.783Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="fzgh7Gy-mW09-pG2WX7r" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-05T08:53:14.639Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="ZaAkMpg3ddNr_2oX-9TP" version="13.6.6" type="github">
   <diagram id="9aOjrgbC5z1DzK8ZOaCG" name="Page-1">
-    <mxGraphModel dx="3585" dy="1035" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="6740" dy="3340" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-1" value="CesiumWidget.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" parent="1" vertex="1">
-          <mxGeometry x="-2206" y="-203" width="422" height="263" as="geometry" />
+          <mxGeometry x="-1993" y="40" width="422" height="263" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-9" value="&lt;div&gt;&lt;b&gt;/**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* Renders the scene.&amp;nbsp; This function is called automatically&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* unless &amp;lt;code&amp;gt;useDefaultRenderLoop&amp;lt;/code&amp;gt; is set to false;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;CesiumWidget.prototype.render = function () {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (this._canRender) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; this._scene.initializeFrame();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; var currentTime = this._clock.tick();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; this._scene.render(currentTime);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; } else {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; this._clock.tick();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" parent="_qH6-IZlokEgzrvQ4-RS-1" vertex="1">
           <mxGeometry x="14" y="52" width="394" height="198" as="geometry" />
@@ -17,7 +17,7 @@
           <mxGeometry x="212" y="127" width="8" height="8" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-4" value="Scene.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;resizable=1;" parent="1" vertex="1">
-          <mxGeometry x="-1732" y="-400" width="903" height="1892" as="geometry">
+          <mxGeometry x="-1519" y="-157" width="873" height="1892" as="geometry">
             <mxRectangle x="-797" y="-59" width="128" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -32,8 +32,11 @@
         <mxCell id="xKLGjb7A9fxTzqLFo98r-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=none;align=left;" vertex="1" parent="_qH6-IZlokEgzrvQ4-RS-17">
           <mxGeometry x="259.5" y="785" width="8" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="xKLGjb7A9fxTzqLFo98r-1" value="&lt;div&gt;&lt;b&gt;function prePassesUpdate(scene) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; scene._jobScheduler.resetBudgets();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; var frameState = scene._frameState;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; var primitives = scene.primitives;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; primitives.prePassesUpdate(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (defined(scene.globe)) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; scene.globe.update(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; scene._picking.update();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; frameState.creditDisplay.update();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;}&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_qH6-IZlokEgzrvQ4-RS-4">
+        <mxCell id="xKLGjb7A9fxTzqLFo98r-1" value="&lt;div&gt;&lt;b&gt;function prePassesUpdate(scene) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; scene._jobScheduler.resetBudgets();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; var frameState = scene._frameState;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; var primitives = scene.primitives;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; primitives.prePassesUpdate(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (defined(scene.globe)) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; scene.globe.update(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; scene._picking.update();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; frameState.creditDisplay.update();&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;}&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=1;autosize=0;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_qH6-IZlokEgzrvQ4-RS-4">
           <mxGeometry x="595" y="1237" width="263" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="xKLGjb7A9fxTzqLFo98r-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=none;align=left;" vertex="1" parent="xKLGjb7A9fxTzqLFo98r-1">
+          <mxGeometry x="209" y="127" width="8" height="8" as="geometry" />
         </mxCell>
         <mxCell id="xKLGjb7A9fxTzqLFo98r-3" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.007;entryY=0.092;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="_qH6-IZlokEgzrvQ4-RS-4" source="xKLGjb7A9fxTzqLFo98r-2" target="xKLGjb7A9fxTzqLFo98r-1">
           <mxGeometry relative="1" as="geometry" />
@@ -45,7 +48,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-23" value="FrameState" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" parent="1" vertex="1">
-          <mxGeometry x="189" y="-259" width="601" height="183" as="geometry" />
+          <mxGeometry x="339" y="-709" width="601" height="183" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-27" value="&lt;div&gt;&lt;b&gt;this.passes = {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; render: false,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; pick: false,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; depth: false,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; postProcess: false,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; offscreen: false,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" parent="_qH6-IZlokEgzrvQ4-RS-23" vertex="1">
           <mxGeometry x="8" y="48" width="139" height="114" as="geometry" />
@@ -54,16 +57,19 @@
           <mxGeometry x="156" y="48" width="436" height="128" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-34" value="Globe.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" parent="1" vertex="1">
-          <mxGeometry x="-65" y="312" width="344" height="203" as="geometry" />
+          <mxGeometry x="-459" y="158" width="344" height="403" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-35" value="&lt;div&gt;&lt;b&gt;Globe.prototype.endFrame = function (frameState) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (!this.show) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; return;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (frameState.passes.render&amp;nbsp; &amp;nbsp; ) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; this._surface.endFrame(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" parent="_qH6-IZlokEgzrvQ4-RS-34" vertex="1">
-          <mxGeometry x="14" y="52" width="318" height="142" as="geometry" />
+          <mxGeometry x="14" y="251" width="318" height="142" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-38" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=none;comic=0;align=left;" parent="_qH6-IZlokEgzrvQ4-RS-35" vertex="1">
           <mxGeometry x="177" y="85" width="8" height="8" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-39" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=none;comic=0;align=left;" parent="_qH6-IZlokEgzrvQ4-RS-35" vertex="1">
           <mxGeometry x="230" y="99" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xKLGjb7A9fxTzqLFo98r-4" value="&lt;div&gt;&lt;b&gt;/**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @private&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Globe.prototype.update = function (frameState) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (!this.show) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; return;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (frameState.passes.render) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; this._surface.update(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_qH6-IZlokEgzrvQ4-RS-34">
+          <mxGeometry x="14" y="55" width="300" height="184" as="geometry" />
         </mxCell>
         <mxCell id="w7j-vH0q7G85GLxAOJQ2-22" style="orthogonalLoop=1;jettySize=auto;html=1;entryX=0.537;entryY=1.006;entryDx=0;entryDy=0;dashed=1;fillColor=#ffff88;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="_qH6-IZlokEgzrvQ4-RS-38" target="_qH6-IZlokEgzrvQ4-RS-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -257,6 +263,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-107" style="edgeStyle=entityRelationEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;startSize=40;strokeColor=#000000;fontSize=25;" parent="1" source="_qH6-IZlokEgzrvQ4-RS-106" target="_qH6-IZlokEgzrvQ4-RS-99" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xKLGjb7A9fxTzqLFo98r-6" style="edgeStyle=entityRelationEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.326;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xKLGjb7A9fxTzqLFo98r-5" target="xKLGjb7A9fxTzqLFo98r-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
