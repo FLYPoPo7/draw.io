@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-07T03:31:02.802Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="M1G1ftXeI7gyuUQSagCU" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-07T03:41:11.434Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="K9v9ozs4hvIkMFYq5FdQ" version="13.6.6" type="github">
   <diagram id="9aOjrgbC5z1DzK8ZOaCG" name="Page-1">
-    <mxGraphModel dx="5020" dy="2362" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="5271" dy="2496" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -256,6 +256,9 @@
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-53" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=none;shadow=0;dashed=1;sketch=0;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-42">
           <mxGeometry x="386" y="253.00249999999997" width="8" height="8" as="geometry" />
         </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-59" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=none;shadow=0;dashed=1;sketch=0;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-42">
+          <mxGeometry x="350" y="337" width="8" height="8" as="geometry" />
+        </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-44" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="_qH6-IZlokEgzrvQ4-RS-40" source="_K7aeOZNzX8ZAruB3Fqv-43" target="_K7aeOZNzX8ZAruB3Fqv-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -437,22 +440,27 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-45" value="QuadtreePrimitive.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" vertex="1" parent="1">
-          <mxGeometry x="811" y="-1183" width="601" height="305" as="geometry" />
+          <mxGeometry x="1299" y="-1287" width="853" height="634" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-46" value="&lt;b&gt;this._tilesToRender = [ ]&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
           <mxGeometry x="8" y="48" width="157" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-52" value="&lt;b&gt;this._levelZeroTiles = undefined&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
-          <mxGeometry x="114" y="110" width="204" height="30" as="geometry" />
+          <mxGeometry x="175" y="48" width="204" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-58" value="&lt;b&gt;rootTraversalDetails = [ ]&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
-          <mxGeometry x="338" y="110" width="162" height="30" as="geometry" />
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-58" value="&lt;b&gt;rootTraversalDetails = [ ]; // 其中储存的是 TraversalDetails 类型&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;/**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* Tracks details of traversing a tile while selecting tiles for rendering.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @alias TraversalDetails&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @constructor&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @private&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;function TraversalDetails() {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; /**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* True if all selected (i.e. not culled or refined) tiles in this tile&#39;s subtree&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* are renderable. If the subtree is renderable, we&#39;ll render it; no drama.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; this.allAreRenderable = true;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; /**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* True if any tiles in this tile&#39;s subtree were rendered last frame. If any&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* were, we must render the subtree rather than this tile, because rendering&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* this tile would cause detail to vanish that was visible last frame, and&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* that&#39;s no good.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; this.anyWereRenderedLastFrame = false;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; /**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* Counts the number of selected tiles in this tile&#39;s subtree that are&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* not yet ready to be rendered because they need more loading. Note that&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* this value will _not_ necessarily be zero when&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* {@link TraversalDetails#allAreRenderable} is true, for subtle reasons.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* When {@link TraversalDetails#allAreRenderable} and&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* {@link TraversalDetails#anyWereRenderedLastFrame} are both false, we&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* will render this tile instead of any tiles in its subtree and&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* the `allAreRenderable` value for this tile will reflect only whether _this_&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* tile is renderable. The `notYetRenderableCount` value, however, will still&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* reflect the total number of tiles that we are waiting on, including the&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* ones that we&#39;re not rendering. `notYetRenderableCount` is only reset&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* when a subtree is removed from the render queue because the&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* `notYetRenderableCount` exceeds the&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;* {@link QuadtreePrimitive#loadingDescendantLimit}.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; this.notYetRenderableCount = 0;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;}&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
+          <mxGeometry x="389" y="50" width="455" height="576" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-50" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-49" target="_K7aeOZNzX8ZAruB3Fqv-46">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-54" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.499;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-53" target="_K7aeOZNzX8ZAruB3Fqv-52">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-60" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeWidth=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-59" target="_K7aeOZNzX8ZAruB3Fqv-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1134.8823529411766" y="305.1764705882356" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
