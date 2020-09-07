@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-07T02:32:32.806Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="bmQckGfy1qkH7hOv4PMT" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-07T02:34:29.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="PjR8_6H9eCWXUALpAQ9J" version="13.6.6" type="github">
   <diagram id="9aOjrgbC5z1DzK8ZOaCG" name="Page-1">
     <mxGraphModel dx="5020" dy="2362" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -17,7 +17,7 @@
           <mxGeometry x="212" y="127" width="8" height="8" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-4" value="Scene.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;resizable=1;" parent="1" vertex="1">
-          <mxGeometry x="-2850" y="-1160" width="2002" height="2830" as="geometry">
+          <mxGeometry x="-2850" y="-1160" width="2002" height="2881" as="geometry">
             <mxRectangle x="-797" y="-59" width="128" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -81,6 +81,9 @@
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-7" style="orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_qH6-IZlokEgzrvQ4-RS-4" source="_K7aeOZNzX8ZAruB3Fqv-6" target="_K7aeOZNzX8ZAruB3Fqv-5">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-28" value="&lt;div&gt;&lt;b&gt;function updateAndRenderPrimitives(scene) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; var frameState = scene._frameState;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; scene._groundPrimitives.update(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; scene._primitives.update(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; updateDebugFrustumPlanes(scene);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; updateShadowMaps(scene);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; if (scene._globe) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; scene._globe.render(frameState);&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;}&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_qH6-IZlokEgzrvQ4-RS-4">
+          <mxGeometry x="1094" y="2662" width="288" height="198" as="geometry" />
         </mxCell>
         <mxCell id="_qH6-IZlokEgzrvQ4-RS-16" style="edgeStyle=entityRelationEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;" parent="1" source="_qH6-IZlokEgzrvQ4-RS-11" target="_qH6-IZlokEgzrvQ4-RS-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
