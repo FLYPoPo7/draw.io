@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-07T07:55:09.773Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="iip6Z75-Zh3B_u3i4DPc" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-07T07:57:52.891Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="CpZYzUBOxKDA8DyxgQCA" version="13.6.6" type="github">
   <diagram id="9aOjrgbC5z1DzK8ZOaCG" name="Page-1">
-    <mxGraphModel dx="5970" dy="2870" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="5273" dy="2496" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -480,7 +480,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-65" value="GeographicTilingScheme.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" vertex="1" parent="1">
-          <mxGeometry x="2641" y="620" width="586" height="565" as="geometry" />
+          <mxGeometry x="2688" y="620" width="520" height="358" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-66" value="&lt;div&gt;&lt;b&gt;/**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* Gets the total number of tiles in the X direction at a specified level-of-detail.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @param {Number} level The level-of-detail.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @returns {Number} The number of tiles in the X direction at the given level.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;GeographicTilingScheme.prototype.getNumberOfXTilesAtLevel = function (level) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; return this._numberOfLevelZeroTilesX &amp;lt;&amp;lt; level; // 移位运算符&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-65">
           <mxGeometry x="13" y="48" width="491" height="142" as="geometry" />
@@ -492,6 +492,21 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-72" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.714;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-71" target="_K7aeOZNzX8ZAruB3Fqv-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-73" value="WebMercatorTilingScheme.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" vertex="1" parent="1">
+          <mxGeometry x="2688" y="990" width="520" height="358" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-74" value="&lt;div&gt;&lt;b&gt;/**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* Gets the total number of tiles in the X direction at a specified level-of-detail.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @param {Number} level The level-of-detail.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @returns {Number} The number of tiles in the X direction at the given level.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;WebMercatorTilingScheme.prototype.getNumberOfXTilesAtLevel = function (level) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; return this._numberOfLevelZeroTilesX &amp;lt;&amp;lt; level; // 移位运算符&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-73">
+          <mxGeometry x="13" y="48" width="500" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-75" value="&lt;div&gt;&lt;b&gt;/**&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* Gets the total number of tiles in the Y direction at a specified level-of-detail.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @param {Number} level The level-of-detail.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;* @returns {Number} The number of tiles in the Y direction at the given level.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;*/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;WebMercatorTilingScheme.prototype.getNumberOfYTilesAtLevel = function (level) {&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; return this._numberOfLevelZeroTilesY &amp;lt;&amp;lt; level; // 移位运算符&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;};&lt;/b&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;fillColor=#CCFFFF;collapsible=0;rotatable=0;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-73">
+          <mxGeometry x="13" y="205" width="500" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-76" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.726;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-69" target="_K7aeOZNzX8ZAruB3Fqv-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-77" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.723;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-71" target="_K7aeOZNzX8ZAruB3Fqv-75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
