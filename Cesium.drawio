@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-07T03:25:12.881Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="4SXHeuy3ymXXi9Jo82gz" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-07T03:28:24.695Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="qiRsF3DEgAzpYa71oigw" version="13.6.6" type="github">
   <diagram id="9aOjrgbC5z1DzK8ZOaCG" name="Page-1">
-    <mxGraphModel dx="4411" dy="2035" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4579" dy="2126" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -439,11 +439,14 @@
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-45" value="QuadtreePrimitive.js" style="swimlane;swimlaneLine=1;swimlaneFillColor=none;fontSize=25;startSize=40;fontStyle=1;autosize=0;collapsible=1;expand=1;" vertex="1" parent="1">
           <mxGeometry x="811" y="-1183" width="601" height="305" as="geometry" />
         </mxCell>
-        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-46" value="&lt;b&gt;this._tilesToRender&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
-          <mxGeometry x="8" y="48" width="132" height="30" as="geometry" />
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-46" value="&lt;b&gt;this._tilesToRender = [ ]&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
+          <mxGeometry x="8" y="48" width="157" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-52" value="&lt;b&gt;this._levelZeroTiles&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
-          <mxGeometry x="114" y="110" width="133" height="30" as="geometry" />
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-52" value="&lt;b&gt;this._levelZeroTiles = undefined&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
+          <mxGeometry x="114" y="110" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_K7aeOZNzX8ZAruB3Fqv-58" value="&lt;b&gt;rootTraversalDetails = [ ]&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=top;points=[];rounded=0;backgroundOutline=0;container=1;strokeColor=#000000;spacing=6;imageAspect=1;collapsible=0;comic=0;rotatable=0;fillColor=#FFD966;" vertex="1" parent="_K7aeOZNzX8ZAruB3Fqv-45">
+          <mxGeometry x="338" y="110" width="162" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_K7aeOZNzX8ZAruB3Fqv-50" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="_K7aeOZNzX8ZAruB3Fqv-49" target="_K7aeOZNzX8ZAruB3Fqv-46">
           <mxGeometry relative="1" as="geometry" />
